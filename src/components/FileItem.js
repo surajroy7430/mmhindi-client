@@ -1,6 +1,8 @@
 import React from "react";
 
 const FileItem = ({ file, index, onDelete }) => {
+    console.info(file.filename);
+
     return (
         <tr>
             <td className="text-center">
