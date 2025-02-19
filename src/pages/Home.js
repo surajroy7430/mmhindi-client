@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <div className="container-fluid bg-dark text-white min-vh-100 py-5">
             <div className="w-100 px-0">
-                <h2 className="text-center text-uppercase mb-4">Song Upload System</h2>
+                <h2 className="text-center text-uppercase mb-4">Song Upload System (Hindi)</h2>
 
                 <div className="row justify-content-center">
                     <div className="col-xl-6 col-lg-8 col-md-10 col-sm-12">
