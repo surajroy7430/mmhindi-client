@@ -2,7 +2,7 @@ import React from "react";
 
 const FileItem = ({ file, index, onDelete }) => {
     let fileSize = file.fileSize /(1024*1024);
-    fileSize = fileSize.toFixed(1);
+    fileSize = fileSize.toFixed(2);
     
     return (
         <tr>
