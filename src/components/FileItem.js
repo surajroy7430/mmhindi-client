@@ -1,6 +1,9 @@
 import React from "react";
 
 const FileItem = ({ file, index, onDelete }) => {
+    let fileSize = file.fileSize /(1024*1024);
+    fileSize = fileSize.toFixed(1);
+    
     return (
         <tr>
             <td className="text-center">
@@ -8,6 +11,7 @@ const FileItem = ({ file, index, onDelete }) => {
             </td>
             <td>
                 {file.filename.replace(/\.[^/.]+$/, "")}
+                <span className="text-secondary"> ({fileSize} MB)</span>
             </td>
             <td className="text-center">
                 {file.coverImageUrl ? (
